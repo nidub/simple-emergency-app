@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Registration"
+    android:background="@color/transparent"
+    android:id="@+id/registration">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:background="@drawable/border">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="Register"
+                android:textSize="50sp" />
+
+            <EditText
+                android:id="@+id/regusername"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:hint="Username"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:backgroundTint="@color/colorPrimary"/>
+
+            <EditText
+                android:id="@+id/regemail"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Email Id"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:backgroundTint="@color/colorPrimary"/>
+
+            <LinearLayout
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:background="@drawable/border">
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/ccp"
+                    android:layout_width="114dp"
+                    android:layout_height="match_parent"
+                    android:textSize="20sp"
+                    app:ccp_autoDetectCountry="true"
+                    app:ccp_showNameCode="true" />
+
+                <EditText
+                    android:id="@+id/regphonenumber"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Mobile Number"
+                    android:inputType="phone"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:backgroundTint="@color/colorPrimary"/>
+
+            </LinearLayout>
+
+            <EditText
+            android:id="@+id/regpassword"
+            android:layout_width="295dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="20sp"
+            android:padding="10dp"
+                android:backgroundTint="@color/colorPrimary"/>
+
+            <EditText
+                android:id="@+id/regcpassword"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:backgroundTint="@color/colorPrimary"/>
+
+            <ProgressBar
+                android:id="@+id/progressbar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mtext"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/regbutton"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custom_button2"
+                android:text="Register"
+                android:textAllCaps="false"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="40dp"
+                android:onClick="login"
+                android:text="Already have an Account?"
+                android:textColor="@color/colorPrimary"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

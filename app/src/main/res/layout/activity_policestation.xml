@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".policestation"
+    android:background="@color/transparent"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@drawable/police"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:importantForAccessibility="no"
+            android:text="@string/contact_details3"
+            android:layout_margin="19dp"
+            android:background="@drawable/custom_button"
+            android:textSize="25sp"
+            android:fontFamily="@font/cd"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:importantForAccessibility="no"
+                android:text="Toll Free number"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:fontFamily="@font/te"/>
+
+            <TextView
+                android:id="@+id/contactnumberpolice"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:importantForAccessibility="no"
+                android:text="119"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/te"/>
+
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="132dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/te"
+            android:importantForAccessibility="no"
+            android:paddingStart="15dp"
+            android:text="Email Id:"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/te"
+            android:importantForAccessibility="no"
+            android:text="mumbaipolice@\ngmail.com"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:gravity="center">
+
+
+            <ImageButton
+                android:id="@+id/policecall"
+                android:layout_width="131dp"
+                android:layout_height="55dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_call_black_24dp"
+                android:background="@drawable/custom_button2"/>
+
+            <ImageButton
+                android:id="@+id/policenavigate"
+                android:layout_width="131dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="40dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_map_black_24dp"
+                android:background="@drawable/custom_button2"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+

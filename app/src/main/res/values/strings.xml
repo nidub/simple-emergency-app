@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Emergency Service</string>
+    <string name="title_activity_map">map</string>
+    <string name="contact_details1">Contact Details</string>
+    <string name="contact_details2">Contact Details</string>
+    <string name="contact_details3">Contact Details</string>
+</resources>
